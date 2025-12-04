@@ -21,6 +21,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 input {
   padding: 0.5rem;
   border: 1px solid #ccc;
