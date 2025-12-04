@@ -7,7 +7,9 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <Menu />
-      <h1>RTV Showcase</h1>
+      <div className="flex w-full justify-center mb-4">
+        <h1>RTV Showcase</h1>
+      </div>
       <Outlet />
       <TanStackDevtools
         config={{

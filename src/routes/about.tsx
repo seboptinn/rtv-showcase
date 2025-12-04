@@ -8,9 +8,8 @@ export const Route = createFileRoute("/about")({
 
 function RouteComponent() {
   return (
-    <div>
-      <h2>Om oss</h2>
-      <section className={classes.card}>
+    <div className="flex flex-col max-w-full items-center">
+      <section className={classes.card + " md:max-w-3/4 mb-4 max-w-full"}>
         <h3>RiksTV</h3>
         <p>
           RiksTV - hvem er vi? I RiksTV jobber vi for å skape et produkt til
@@ -27,8 +26,8 @@ function RouteComponent() {
           om du vil.
         </p>
       </section>
-      <section>
-        <h3>Ta kontakt</h3>
+      <section className={classes.card + " md:max-w-1/2 max-w-full"}>
+        <h4>Ta kontakt</h4>
         <p>
           Har du spørsmål om RiksTV? Ta gjerne kontakt med oss via vårt
           kontaktskjema, så svarer vi deg så snart som mulig.
