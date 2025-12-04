@@ -40,8 +40,7 @@ You need node/npm available in your terminal.
 
 Om man skulle gjort ting annerledes/forbedret så skulle man:
 
-- Fjernet mock tiden i api kallet (en timeout på 3 sek) for tester, slik at testene går igjennom fort
-- Nå er det 20% sjanse for at hver test som bruker submit kallet feiler, så dette kan gjøre at testene ikke alltid passerer
-- Loaderen kunne man laget inline med send inn knappen
+- Nå er det 20% sjanse for at hver test som er avhengig av "success" resultatet til api kallet feiler, så dette kan gjøre at testene ikke alltid passerer
+- Loaderen kunne man tilpasset "send inn" knappen
 - Om man går ned til mobilstørrelse så kunne man gjort navigasjonsmenyen til en burger-meny
 - Man kunne tatt inn RiksTV logoen både som Favicon men også på siden.
