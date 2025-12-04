@@ -19,20 +19,29 @@ You need node/npm available in your terminal.
 
 **Install packages**
 
-``npm i``
+`npm i`
 
 **Run tests**
 
-``npm run test``
+`npm run test`
 
 **Start dev server**
 
-``npm run dev``
-
+`npm run dev`
 
 ## Please fulfill the following requirements
 
 - The title **RTV Showcase** should be visible for all pages.
-- It should be possible to submit a contact form using the method ``submitForm()`` in the file ``src/utils/api.ts``.
+- It should be possible to submit a contact form using the method `submitForm()` in the file `src/utils/api.ts`.
 - The counter on the index page has no limit. Make it count from 1 to 10 (jump back to 1 when 10 is clicked).
-- Write a unit test for the method ``submitForm()`` in the file ``src/utils/api.ts``.
+- Write a unit test for the method `submitForm()` in the file `src/utils/api.ts`.
+
+## Notes & afterthought:
+
+Om man skulle gjort ting annerledes/forbedret så skulle man:
+
+- Fjernet mock tiden i api kallet (en timeout på 3 sek) for tester, slik at testene går igjennom fort
+- Nå er det 20% sjanse for at hver test som bruker submit kallet feiler, så dette kan gjøre at testene ikke alltid passerer
+- Loaderen kunne man laget inline med send inn knappen
+- Om man går ned til mobilstørrelse så kunne man gjort navigasjonsmenyen til en burger-meny
+- Man kunne tatt inn RiksTV logoen både som Favicon men også på siden.
