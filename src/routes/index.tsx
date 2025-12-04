@@ -8,13 +8,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [count, setCount] = useState(0);
+
+  const handleCountClick = () => {
+    setCount(count == 10 ? 0 : count + 1);
+  };
+
   return (
     <>
-      <h1>RTV Showcase</h1>
       <div className={classes.card}>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <button onClick={handleCountClick}>count is {count}</button>
       </div>
     </>
   );

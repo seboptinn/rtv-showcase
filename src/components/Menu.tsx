@@ -4,10 +4,10 @@ export const Menu = () => {
   return (
     <nav className={classes.menu}>
       <span>
-        <a href="/">Home</a>
+        <a href="/">Hjem</a>
       </span>
       <span>
-        <a href="/about">About</a>
+        <a href="/about">Om oss</a>
       </span>
     </nav>
   );

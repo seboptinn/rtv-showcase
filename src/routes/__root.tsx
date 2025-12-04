@@ -7,6 +7,7 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <Menu />
+      <h1>RTV Showcase</h1>
       <Outlet />
       <TanStackDevtools
         config={{
