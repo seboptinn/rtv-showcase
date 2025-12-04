@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type {
   ApiResponse,
   ContactForm as ContactFormType,
@@ -41,10 +41,6 @@ const ContactForm = () => {
 
     setApiResponse(undefined);
   };
-
-  useEffect(() => {
-    console.log(" is loading ", isLoading);
-  }, [isLoading]);
 
   return (
     <form
